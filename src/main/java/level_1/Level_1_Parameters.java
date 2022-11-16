@@ -17,4 +17,15 @@ public class Level_1_Parameters {
         private final int[] score;
         private final int answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param134240 {
+
+        param1(new int[]{1, 3, 4, 6}, "1223330333221"),
+        param2(new int[]{1, 7, 1, 2}, "111303111");
+
+        private final int[] food;
+        private final String answer;
+    }
 }
