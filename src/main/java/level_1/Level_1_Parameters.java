@@ -28,4 +28,17 @@ public class Level_1_Parameters {
         private final int[] food;
         private final String answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param136798 {
+
+        param1(5, 3, 2, 10),
+        param2(10, 3, 2, 21);
+
+        private final int number;
+        private final int limit;
+        private final int power;
+        private final int answer;
+    }
 }
