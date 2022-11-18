@@ -14,17 +14,20 @@ public class Solution implements SolutionInterface {
     @Override
     public void solution() {
         Level_1_Parameters.Param134240[] values = Level_1_Parameters.Param134240.values();
+        boolean flag = true;
         for(Level_1_Parameters.Param134240 p : values){
             long stTime = System.currentTimeMillis();
             String sAnswer = p.getAnswer();
             String pAnswer = solution(p.getFood());
             long edTime = System.currentTimeMillis();
             double milliseconds = edTime - stTime;
+            flag = flag && Objects.equals(sAnswer, pAnswer);
 
             System.out.println(Objects.equals(sAnswer, pAnswer) ? "정답!!" : "오답!!");
             System.out.println("sAnswer : " + sAnswer + ", pAnswer : " + pAnswer);
             System.out.println("소요시간 : " + (milliseconds / 1000) + "초\r\n");
         }
+        System.out.println(flag ? "모두 정답!!" : "오답 존재!!");
     }
 
     public String solution(int[] food) {

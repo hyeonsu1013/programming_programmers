@@ -41,4 +41,21 @@ public class Level_1_Parameters {
         private final int power;
         private final int answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param133502 {
+
+        param1(new int[]{2,1,1,2,3,1,2,3,1}, 2),
+        param2(new int[]{1,3,2,1,2,1,3,1,2}, 0),
+        param3(new int[]{1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 3, 1, 2, 3, 1, 3, 3, 3, 2, 1, 2, 3, 1}, 5),
+        param4(new int[]{1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 1, 1, 2, 3, 3, 1}, 3),
+        param5(new int[]{1, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 1, 2, 3, 1}, 3),
+        param6(new int[]{1, 1, 2, 1, 2, 3, 1, 3, 1, 2, 3, 1}, 3),
+        param7(new int[]{1, 2, 1, 2, 3, 1, 3, 1, 2, 3, 1, 2, 3, 1}, 3),
+        param8(new int[]{1, 2, 1, 2, 3, 1, 3, 1, 1, 2, 3, 1}, 3);
+
+        private final int[] ingredient;
+        private final int answer;
+    }
 }
