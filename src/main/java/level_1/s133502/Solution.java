@@ -20,9 +20,10 @@ public class Solution implements SolutionInterface {
             int pAnswer = solution(p.getIngredient());
             long edTime = System.currentTimeMillis();
             double milliseconds = edTime - stTime;
-            flag = flag && Objects.equals(sAnswer, pAnswer);
+            boolean isAns = Objects.equals(sAnswer, pAnswer);
+            flag = flag && isAns;
 
-            System.out.println(sAnswer == pAnswer ? "정답!!" : "오답!!");
+            System.out.println(isAns ? "정답!!" : "오답!!");
             System.out.println("정답 : " + sAnswer + ", 풀이답 : " + pAnswer);
             System.out.println("소요시간 : " + (milliseconds / 1000) + "초\r\n");
         }

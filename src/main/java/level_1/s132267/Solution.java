@@ -1,11 +1,10 @@
-package level_1.s135808.s132267;
+package level_1.s132267;
 
 import common.SolutionInterface;
 import level_1.Level_1_Parameters;
 import lombok.Data;
 
 import java.util.Objects;
-import java.util.Stack;
 
 @Data
 public class Solution implements SolutionInterface {
@@ -20,9 +19,10 @@ public class Solution implements SolutionInterface {
             int pAnswer = solution(p.getA(), p.getB(), p.getN());
             long edTime = System.currentTimeMillis();
             double milliseconds = edTime - stTime;
-            flag = flag && Objects.equals(sAnswer, pAnswer);
+            boolean isAns = Objects.equals(sAnswer, pAnswer);
+            flag = flag && isAns;
 
-            System.out.println(sAnswer == pAnswer ? "정답!!" : "오답!!");
+            System.out.println(isAns ? "정답!!" : "오답!!");
             System.out.println("정답 : " + sAnswer + ", 풀이답 : " + pAnswer);
             System.out.println("소요시간 : " + (milliseconds / 1000) + "초\r\n");
         }

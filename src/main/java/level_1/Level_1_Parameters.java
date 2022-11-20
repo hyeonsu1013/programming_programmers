@@ -84,4 +84,16 @@ public class Level_1_Parameters {
         private final int k;
         private final int[] answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param131705 {
+
+        param1(new int[]{-2, 3, 0, 2, -5}, 2),
+        param2(new int[]{-3, -2, -1, 0, 1, 2, 3}, 5),
+        param3(new int[]{-1, 1, -1, 1}, 0);
+
+        private final int[] number;
+        private final int answer;
+    }
 }
