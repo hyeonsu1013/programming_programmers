@@ -71,4 +71,17 @@ public class Level_1_Parameters {
         private final int n;
         private final int answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param92334 {
+
+        param1(new String[]{"muzi", "frodo", "apeach", "neo"}, new String[]{"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"}, 2, new int[]{2, 1, 1, 0}),
+        param2(new String[]{"con", "ryan"}, new String[]{"ryan con", "ryan con", "ryan con", "ryan con"}, 3, new int[]{0, 0});
+
+        private final String[] id_list;
+        private final String[] report;
+        private final int k;
+        private final int[] answer;
+    }
 }
