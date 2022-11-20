@@ -58,4 +58,17 @@ public class Level_1_Parameters {
         private final int[] ingredient;
         private final int answer;
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum Param132267 {
+
+        param1(2, 1, 20, 19),
+        param2(3, 1, 20, 9);
+
+        private final int a;
+        private final int b;
+        private final int n;
+        private final int answer;
+    }
 }
